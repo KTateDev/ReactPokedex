@@ -1,38 +1,96 @@
 .App {
   text-align: center;
+  background-color: rgba(46, 47, 53, 0.952);
+}
+html {
+  background-color: rgba(46, 47, 53, 0.952);
+}
+form {
+  padding: 1rem 0 1rem 0;
+  background-color: rgb(40, 40, 43);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search {
+  background-color: rgb(255, 255, 255);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.div-table {
+  align-items: center;
+  margin: auto;
+}
+
+/* .divTableBody {
+  display: flex-box;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+} */
+
+/* .div-table {
+  display: inline;
+  align-items: center;
+} */
+.pokemon-name {
+  color: antiquewhite;
+  -webkit-text-stroke: 0.05em rgb(0, 0, 0);
+  text-decoration: underline white;
+  text-shadow: 2px 2px 4px #000000;
 }
 
-.App-link {
-  color: #61dafb;
+.pokemon-name:first-letter {
+  text-transform: capitalize;
+  position: relative;
+  top: -2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.table-cell {
+  border: 1px solid #646464;
+  display: table-cell;
+  padding: 0.5rem 4rem;
+}
+
+.table-cell,
+.table-cell-stats:nth-child(1n) {
+  background-color: gainsboro;
+}
+
+.table-cell-stats {
+  border: 1px solid #646464;
+  display: table-cell;
+  padding: 0.75rem 1.75rem;
+}
+
+.sprite {
+  height: 8.5rem;
+  position: relative;
+  background-color: rgba(27, 27, 29, 0.952);
+  box-shadow: 2px 4px rgb(0, 0, 0);
+  padding: 0.5rem;
+}
+
+.sprites {
+  padding-top: 1rem;
+}
+
+.stats-table {
+  display: inline;
+  margin: 0 1rem 0 1rem;
+  padding-top: 0;
+  padding-bottom: 5rem;
+  align-items: center;
+}
+
+.stats-title {
+  /* position: relative; */
+  align-items: center;
+  color: antiquewhite;
+  -webkit-text-stroke: 0.05em rgb(0, 0, 0);
+  text-decoration: underline white;
+  text-shadow: 2px 2px 4px #000000;
 }
