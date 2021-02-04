@@ -1,17 +1,11 @@
-import React, {useState, useEffect} from 'react';
 
 
 const Stats = (props) => {
-  
-
-   console.log("Data for pocketmosterrrs" + props);
   return (
     <div className="Stats">
-      
     {props.pokemonData.map((data) => {
       return(
         <div className="container">
-
        <div className="stats-table">
        <h1 className="stats-title">Stats</h1>
        <tr>
@@ -33,7 +27,7 @@ const Stats = (props) => {
         </tr>
         </div>
       </div>
-        
+      
       )
 
     })}

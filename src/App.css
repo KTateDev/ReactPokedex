@@ -1,17 +1,77 @@
 .App {
   text-align: center;
   background-color: rgba(46, 47, 53, 0.952);
+  /* background-image: url('./images/pokeballFlip.png');
+  background-position: 98% 15%;
+  background-repeat: no-repeat;
+  background-size: 20vw; */
+  
 }
 html {
   background-color: rgba(46, 47, 53, 0.952);
+ 
+
 }
+/* body{
+  background-image: url('./images/pokeball.png');
+  background-position: 2% 15%;
+  background-repeat: no-repeat;
+  background-size: 20vw;
+  
+} */
+
 form {
   padding: 1rem 0 1rem 0;
   background-color: rgb(40, 40, 43);
 }
 
+.pokemonLogo{
+  max-width: 80vh;
+  align-items: center;
+}
+
+.pokeball{
+  max-width: 50vh;
+  padding-top: 10rem;
+  padding-bottom: 20rem;
+  animation: rotation 2.35s infinite linear;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10%{
+    transform: rotate(4deg);
+  }
+  20%{
+    transform: rotate(7.85deg);
+  }
+  45%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(-1deg);
+  }
+  65%{
+    transform: rotate(0deg);
+  }
+  82%{
+    transform: rotate(-7.95deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 .search {
   background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  text-shadow: 0px 0px 1px #fff;
+  font-size: 1em;
+  /* border-radius: .5rem; */
+  
 }
 
 .container {
@@ -26,16 +86,7 @@ form {
   margin: auto;
 }
 
-/* .divTableBody {
-  display: flex-box;
-  align-items: center;
-  justify-content: center;
-} */
 
-/* .div-table {
-  display: inline;
-  align-items: center;
-} */
 .pokemon-name {
   color: antiquewhite;
   -webkit-text-stroke: 0.05em rgb(0, 0, 0);
@@ -52,22 +103,23 @@ form {
 .table-cell {
   border: 1px solid #646464;
   display: table-cell;
-  padding: 0.5rem 4rem;
+  padding: 0.55rem 4rem;
 }
 
 .table-cell,
 .table-cell-stats:nth-child(1n) {
   background-color: gainsboro;
+  font-size: 1.2em;
 }
 
 .table-cell-stats {
   border: 1px solid #646464;
   display: table-cell;
-  padding: 0.75rem 1.75rem;
+  padding: 0.95rem 1.75rem;
 }
 
 .sprite {
-  height: 8.5rem;
+  height: 8.85rem;
   position: relative;
   background-color: rgba(27, 27, 29, 0.952);
   box-shadow: 2px 4px rgb(0, 0, 0);
