@@ -1,24 +1,11 @@
 .App {
   text-align: center;
   background-color: rgba(46, 47, 53, 0.952);
-  /* background-image: url('./images/pokeballFlip.png');
-  background-position: 98% 15%;
-  background-repeat: no-repeat;
-  background-size: 20vw; */
-  
+
 }
 html {
   background-color: rgba(46, 47, 53, 0.952);
- 
-
 }
-/* body{
-  background-image: url('./images/pokeball.png');
-  background-position: 2% 15%;
-  background-repeat: no-repeat;
-  background-size: 20vw;
-  
-} */
 
 form {
   padding: 1rem 0 1rem 0;
@@ -146,3 +133,6 @@ form {
   text-decoration: underline white;
   text-shadow: 2px 2px 4px #000000;
 }
+
+
+

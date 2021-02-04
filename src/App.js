@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Stats from "./components/Stats";
-import Home from "./components/Home"
+import Pokeball from "./components/Pokeball"
 import "./App.css";
 import axios from "axios";
 
@@ -57,7 +57,7 @@ const App = () => {
         </label>
       </form>
       
-      {searched === true ? (<span></span>) : (<Home />) }
+      {searched === true ? (<span></span>) : (<Pokeball />) }
       {pokemonData.map((data) => {
         return (
           <div className="container">
